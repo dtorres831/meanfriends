@@ -1,0 +1,19 @@
+ <table>
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>show</th>
+      <th>update</th>
+      <th>delete</th>
+    </tr>
+  </thead>
+  <tbody ng-controller='userController'>
+    <tr ng-repeat='user in users'>
+      <td>{{user.firstname}}</td>
+      <td><a href="" ng-click='show(user._id)'>show</a> </td>
+      <td><a href=""ng-click='edit(user._id)'>update</a></td>
+      <td><a href="" ng-click='delete(user._id)'>delete</a> </td>
+    </tr>
+  </tbody>
+</table>
+<a href="#!/new">add friend</a>

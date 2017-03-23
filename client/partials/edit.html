@@ -1,0 +1,8 @@
+<div ng-controller='userController'>
+  <form >
+    <input type="text" ng-model='cur_user.firstname'><br>
+    <input type="text" ng-model='cur_user.lastname'><br>
+    <input type="text" value={{cur_user.bday|date:medium}}><br>
+    <input type="submit"  value="change info for user" ng-click='change()'>
+  </form>
+</div>
